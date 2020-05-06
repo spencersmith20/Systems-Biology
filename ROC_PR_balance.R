@@ -55,7 +55,7 @@ df1 <- data.frame(labels=ROCR.simple$labels, predictions=ROCR.simple$predictions
 
 ## dataframe with equal positive and negative (50% p/ 50% n)
 df2 <- df1[c(which(df1$labels == 1),
-            which(df1$labels == 0)[1:ength(which(df1$labels==1))]),];
+            which(df1$labels == 0)[1:length(which(df1$labels==1))]),];
 
 ## dataframe with fabricated imbalance (25% p/ 75% n)
 df3 <- df1[c(which(df1$labels == 0)[1:105], which(df1$labels == 1)[1:35]),];
